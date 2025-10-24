@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: linear-gradient(135deg,#0f172a 0%, #0b1220 100%);
+      --accent:#06b6d4;
+      --muted:#94a3b8;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      background: radial-gradient(1200px 600px at 10% 20%, rgba(6,182,212,0.06), transparent),
+                  radial-gradient(900px 400px at 90% 80%, rgba(99,102,241,0.04), transparent),
+                  var(--bg1);
+      color:#e6eef8;
+      display:flex;align-items:center;justify-content:center;padding:32px;
+    }
+    .container{
+      width:100%;max-width:400px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);padding:40px;border-radius:16px;box-shadow:0 12px 30px rgba(2,6,23,0.6)
+    }
+    .logo{
+      width:60px;height:60px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#6366f1);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:#021025;margin:0 auto 14px
+    }
+    h1{text-align:center;margin:0 0 12px;font-size:22px}
+    p{text-align:center;color:var(--muted);margin:0 0 26px}
+    .btn{
+      width:100%;appearance:none;border:0;padding:12px 14px;border-radius:10px;font-weight:600;font-size:15px;cursor:pointer;background:linear-gradient(90deg,var(--accent),#6366f1);color:#021025;box-shadow:0 10px 30px rgba(6,182,212,0.12)
+    }
+    .btn:active{transform:translateY(1px)}
+    footer{text-align:center;margin-top:16px;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>Sign in to view the portfolio</h1>
+    <p>Please continue with Instagram to access the portfolio.</p>
+    <button class="btn" id="loginBtn">Continue with Instagram</button>
+    <footer>© 2025 Mahir Ahmed — Portfolio Login</footer>
+  </main>
+  <script>
+    document.getElementById('loginBtn').addEventListener('click',()=>{
+      window.location.href = 'https://mahir966.github.io/portfolio/';
+    });
+  </script>
+</body>
+</html>
